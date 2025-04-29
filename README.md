@@ -1,71 +1,46 @@
-# Getting Started with Create React App
+# 🎮 Luminova Studios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The official website for Luminova Studios, an indie game development company. Built with **React** and brought to life with **Framer Motion** animations, this site showcases our games, shares our journey, and connects with our community.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### 🚀 Features
 
-### `npm start`
+- **🕹️ Game Showcase:** Explore detailed pages for our released and upcoming game titles.
+- **✨ Smooth Animations:** Engaging user interface animations powered by **Framer Motion**.
+- **🧑‍💻 About Us:** Learn about the mission and the talented team behind Luminova Studios.
+- **📰 News & Updates:** Stay informed with the latest development progress and announcements.
+- **📱 Responsive Design:** Fully accessible and optimized experience across desktop, tablet, and mobile devices.
+- **✉️ Contact Information:** Easily get in touch with the studio for inquiries or collaborations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Tech Stack
 
-### `npm test`
+- **React:** A JavaScript library for building dynamic user interfaces.
+- **JavaScript (ES6+):** Core language for interactivity and logic.
+- **Framer Motion:** Production-ready motion library for delightful animations.
+- **CSS3:** Styling the application (mention Modules, Tailwind, etc., if applicable).
+- **Node.js / npm / yarn:** For dependency management and the build process.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🔧 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Prerequisites:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (LTS version recommended)
+- npm (comes with Node.js) or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Installation & Running:**
 
-### `npm run eject`
+1.  **Clone:** `git clone https://github.com/your-username/luminova-studios.git`
+2.  **Navigate:** `cd luminova-studios`
+3.  **Install:** `npm install` (or `yarn install`)
+4.  **Run Dev Server:** `npm start` (or `yarn start`) - usually runs on `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🤝 Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# luminova-studios
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/luminova-studios/issues). Fork the repo and submit a pull request.
