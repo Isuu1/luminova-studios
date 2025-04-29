@@ -1,0 +1,26 @@
+.notfound {
+  position: relative;
+  background: transparent;
+  color: aliceblue;
+  margin-top: 20vh;
+  line-height: 4rem;
+  padding-bottom: 200px;
+}
+.title {
+  text-align: center;
+}
+.text {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.image {
+  width: 30vw;
+  position: absolute;
+  bottom: -270px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}

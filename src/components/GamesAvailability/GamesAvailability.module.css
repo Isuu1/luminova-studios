@@ -1,0 +1,70 @@
+.gamesAvailabilityContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #0d1224;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.images {
+  position: relative;
+}
+
+.image1 {
+  max-width: 430px;
+  width: 70%;
+  z-index: 1;
+}
+
+.image2 {
+  max-width: 430px;
+  position: absolute;
+  width: 70%;
+  z-index: 2;
+  transform: rotate(-6deg);
+}
+
+.description {
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.icon {
+  max-width: 80px;
+}
+
+@media (max-width: 940px) {
+  .gamesAvailabilityContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .images {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .gamesAvailabilityContainer {
+    padding: 1rem 100px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .gamesAvailabilityContainer {
+    padding: 1rem 200px;
+  }
+}

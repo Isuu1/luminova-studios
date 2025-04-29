@@ -1,0 +1,68 @@
+.header {
+  height: auto;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  padding: 40px 0 40px 0;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  font-size: 1.9rem;
+  color: #fff;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  left: 19px;
+  top: -3px;
+  z-index: 3;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dot {
+  background: #ffda35;
+  border-radius: 180px;
+  width: 6px;
+  height: 6px;
+}
+
+.dots .dot:nth-child(5) {
+  background: #fff235;
+  width: 12px;
+  height: 12px;
+}
+
+.nav {
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.headerScrolled {
+  background: #fff;
+  color: #000 !important;
+}
+.headerScrolled .logo a {
+  color: #000 !important;
+}
+.headerScrolled .nav a {
+  color: #000 !important;
+}
+.headerPadding {
+  padding: 1rem 0;
+}

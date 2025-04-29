@@ -1,0 +1,128 @@
+.heroContainer {
+  height: 100dvh;
+  background: url("../../../public/images/hero-bg.webp");
+  background-size: cover;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.headline {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.button {
+  padding: 15px 25px;
+  position: relative;
+  width: auto;
+  font-size: 1.1rem;
+  border: none;
+  align-self: flex-start;
+  margin-top: 10px;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgb(165, 80, 10),
+    orange,
+    red,
+    purple,
+    rgb(165, 80, 10)
+  );
+  background-size: 400%;
+  animation: btn-animate 30s linear infinite;
+  border-radius: 90px;
+  box-shadow: -2px 5px 13px -3px #ca01b9;
+}
+
+.shapeDivider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+
+.shapeDivider svg {
+  position: relative;
+  display: block;
+  width: calc(118% + 1.3px);
+  height: 290px;
+  transform: rotateY(180deg);
+}
+
+.shapeDividerPath {
+  fill: rgba(1, 15, 60, 1);
+}
+
+.headlineImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  z-index: 3;
+  position: relative;
+  max-width: 550px;
+}
+
+.shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  clip-path: polygon(0 1%, 100% 0, 83% 100%, 20% 100%);
+  height: 500px;
+  z-index: 1;
+  background: rgb(248, 250, 2);
+  background: linear-gradient(
+    0deg,
+    rgba(248, 250, 2, 0.9) 0%,
+    rgba(248, 250, 2, 0) 100%
+  );
+}
+
+@media (max-width: 820px) {
+  .heroContainer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headline {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .button {
+    margin: auto;
+  }
+
+  .shape {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .heroContainer {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .heroContainer {
+    padding: 0 200px;
+  }
+}

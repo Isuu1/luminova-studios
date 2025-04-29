@@ -1,0 +1,205 @@
+.about {
+  width: 100%;
+  background: #0d1224;
+}
+
+.header {
+  width: 100%;
+  height: 60vh;
+  background: url("../../public/images/about-bg.webp");
+  background-size: cover;
+  position: relative;
+}
+
+.text {
+  z-index: 3;
+  color: aliceblue;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.shapeDivider {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+  transform: rotate(180deg);
+}
+
+.shapeDivider svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 340px;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.shapeDividerFill {
+  fill: #0d1224;
+}
+
+.mainSection {
+  width: 90%;
+  margin: auto;
+  line-height: 30px;
+  padding: 20px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  position: relative;
+}
+
+.companyImage {
+  width: 80%;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 180px 30px 180px 30px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  box-shadow: 10px 10px 180px 20px rgb(151, 29, 207);
+  position: relative;
+}
+
+.companyImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.shape {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 60px;
+  aspect-ratio: 1/1;
+  background: #0d1224;
+  z-index: 4;
+}
+
+.bgImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 700px;
+  height: auto;
+  opacity: 0.2;
+  z-index: 3;
+}
+
+.team {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.teamTitle {
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 100px !important;
+}
+
+.teamMember {
+  flex-basis: 20%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.teamMemberAvatar {
+  position: relative;
+}
+
+.teamMemberAvatar img {
+  min-width: 230px;
+  max-width: 250px;
+  border-radius: 180px;
+  overflow: hidden;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.teamMemberDescription {
+  width: 100%;
+  line-height: 25px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #0d1224 0%,
+    #141e41 50%,
+    rgba(123, 24, 168, 0.1) 100%
+  );
+  position: absolute;
+  top: 0;
+  font-size: clamp(
+    0.8rem,
+    calc(0.8rem + ((1vw - 0.0625rem) * 0.2857)),
+    1.125rem
+  );
+  text-align: center;
+  opacity: 0;
+  z-index: 3;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 180px;
+}
+
+.teamMemberDescription:hover {
+  opacity: 1;
+}
+
+.teamMemberCredentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.teamMemberCredentials::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60%;
+  height: 0;
+  border: 2px solid rgba(151, 29, 207, 0.15);
+  border-radius: 180px;
+  box-shadow: 10px 10px 100px 20px rgba(151, 29, 207, 0.493);
+}
+
+@media (min-width: 1000px) {
+  .mainSection {
+    width: auto;
+    padding: 1rem 100px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .mainSection {
+    width: auto;
+    padding: 1rem 200px;
+  }
+}

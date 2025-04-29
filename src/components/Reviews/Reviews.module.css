@@ -1,0 +1,95 @@
+.reviewsContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: linear-gradient(to right, #0d1224 0%, #080b16 50%, #0d1224 100%);
+}
+
+.image {
+  min-width: 300px;
+  max-width: 470px;
+}
+
+.description {
+  width: 50%;
+  line-height: 1.8rem;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 60px 20px 20px 20px;
+  scale: 0.7;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  width: 300px;
+  background: linear-gradient(
+    180deg,
+    rgb(136, 10, 209) 0%,
+    rgb(61, 15, 75) 100%
+  );
+  margin-top: 4rem;
+}
+
+.reviewCardText {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.reviewCardName {
+  font-weight: 600;
+  color: #fff;
+}
+
+.reviewCardAvatar {
+  width: 120px;
+  margin: auto;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.starsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.starIcon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .description {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reviewsContainer {
+    padding: 1rem 100px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .reviewsContainer {
+    padding: 1rem 200px;
+  }
+}
