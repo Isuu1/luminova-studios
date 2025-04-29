@@ -71,7 +71,7 @@ const TenziesGame = () => {
         localStorage.setItem("time", JSON.stringify(time));
       }
     }
-  }, [dice]);
+  }, [dice, localStorageTimes, time]);
 
   function newDie() {
     return {

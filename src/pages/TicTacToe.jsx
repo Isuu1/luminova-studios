@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //Icons
 import { FaArrowLeft } from "react-icons/fa";
 //Animations
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { slideTopSpring } from "../styles/animations";
 //Styles
 import styles from "./TicTacToe.module.css";
@@ -48,17 +48,6 @@ const TicTacToe = () => {
     player2: 0,
   });
 
-  const lines = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8], //Vertical lines
-    [0, 3, 6],
-    [1, 4, 7],
-    [2, 5, 8], //Horizontal lines
-    [0, 4, 8],
-    [2, 4, 6], //Diagonal lines
-  ];
-
   const filledSquares = squares.filter((square) => square !== null);
   //Computer turn
   const isComputerTurn =
@@ -70,6 +59,16 @@ const TicTacToe = () => {
     squares.filter((square) => square !== null).length % 2 === 0;
 
   useEffect(() => {
+    const lines = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8], //Vertical lines
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8], //Horizontal lines
+      [0, 4, 8],
+      [2, 4, 6], //Diagonal lines
+    ];
     //It defines template for possible winning lines
     const winningLines = (a, b, c) => {
       return lines.filter((squareIndexes) => {
@@ -159,7 +158,14 @@ const TicTacToe = () => {
         putComputerAt(randomIndex);
       }
     }, 1000);
-  }, [squares]);
+  }, [
+    squares,
+    isComputerTurn,
+    isPlayerTurn,
+    filledSquares,
+    winner,
+    winsCounter,
+  ]);
 
   //Defines what happends with a Tile when it's clicked
   function handleTileClick(index) {
